@@ -15,8 +15,8 @@ def fileformat():
 
 conn = sqlite3.connect('example.db')
 video = input("Enter Video Name:")
-#id = sub_gen.sub_g(video)
-id = 'QqsLTNkzvaY'
+id = sub_gen.sub_g(video)
+#id = 'QqsLTNkzvaY'
 ch_qry = """select NAME from Sumry where NAME = ?"""
 cursor = conn.cursor()
 cursor.execute(ch_qry, (id,))
